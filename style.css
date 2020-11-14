@@ -20,4 +20,31 @@ html{
 }
 body{
     font-size: 1.6rem;
+    height: 100vh;
+    background-color: var(--Light_Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 50%;
+    width: 100%;
+    /* height:40rem;
+    background-color: yellowgreen; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.community_sec{
+
+}
+
+.price_sec{
+
+}
+
+.why_us{
+
 }
