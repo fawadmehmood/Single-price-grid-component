@@ -28,23 +28,36 @@ body{
 }
 
 .container{
-    max-width: 50%;
+    max-width: 40%;
     width: 100%;
-    /* height:40rem;
-    background-color: yellowgreen; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
 .community_sec{
+   grid-column: 1 / -1;
+   grid-row: 1 / 2;
+   background-color: white;
+   padding: 4rem;
+}
 
+.other_info_sec{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .price_sec{
-
+   grid-column: 1 / 2;
+   grid-row: 1 /-1;
+   background-color: var(--Cyan);
 }
 
 .why_us{
-
+    grid-column: 2 / -1;
+    grid-row: 1 /-1;
+    background-color: #4abebd;
 }
