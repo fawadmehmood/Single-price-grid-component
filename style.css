@@ -21,7 +21,7 @@ html{
 body{
     color: var(--Light_Gray); 
     font-size: 1.6rem;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--Light_Gray);
     display: flex;
     justify-content: center;
@@ -130,4 +130,28 @@ body{
 
 .why_us .point_list li{
     line-height: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+body{
+   padding: 10% 0;
+}
+
+.container{
+    max-width: 90%;
+}
+
+.other_info_sec{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+.price{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+.why_us{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+}
+
 }
