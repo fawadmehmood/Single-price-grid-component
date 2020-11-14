@@ -19,6 +19,7 @@ html{
     font-size: 62.5%;
 }
 body{
+    color: var(--Light_Gray); 
     font-size: 1.6rem;
     height: 100vh;
     background-color: var(--Light_Gray);
@@ -28,18 +29,20 @@ body{
 }
 
 .container{
-    max-width: 40%;
+    max-width: 50%;
     width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
 }
 
-.community_sec{
+
+.community{
    grid-column: 1 / -1;
    grid-row: 1 / 2;
    background-color: white;
-   padding: 4rem;
 }
 
 .other_info_sec{
@@ -50,7 +53,7 @@ body{
     grid-template-rows: 1fr;
 }
 
-.price_sec{
+.price{
    grid-column: 1 / 2;
    grid-row: 1 /-1;
    background-color: var(--Cyan);
@@ -60,4 +63,71 @@ body{
     grid-column: 2 / -1;
     grid-row: 1 /-1;
     background-color: #4abebd;
+}
+
+.sec{
+    padding: 4rem;
+}
+
+.community #main_heading{
+    color: var(--Cyan);
+    font-size: 3rem;
+    font-weight: var(--font_700);
+}
+.desc_text{
+    margin-top: 1rem;
+}
+.desc_heading{
+    color: var(--Bright_Yellow);
+}
+.hh3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.description_text{
+    font-size: 1.4rem;
+    color: var(--Grayish_Blue);
+    font-weight: var(--font_700);
+    line-height: 2.5rem;
+}
+
+.price .ppm #price_tag{
+    font-size: 3.5rem;
+    font-weight: var(--font_700);
+    margin-right: 0.5rem;
+} 
+
+.price .ppm{
+    margin-top: 2rem;
+}
+
+.price .ppm #per_month{
+    color: hsl(200, 6%, 79%);
+}
+
+.price #ppd{
+    margin-top: 1rem;
+}
+
+.price .btn{
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    color: var(--Light_Gray);
+    background-color: var(--Bright_Yellow);
+    font-weight: var(--font_700);
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.5rem 0;
+}
+
+.why_us .point_list{
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.why_us .point_list li{
+    line-height: 2rem;
 }
